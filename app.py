@@ -5,9 +5,9 @@ from selenium.webdriver.chrome.options import Options
 from urllib.parse import urlparse
 
 # Load the code object from the .marshal file
-with open('is_valid_url.marshal', 'rb') as file:
+with open('Functions/is_valid_url.marshal', 'rb') as file:
     is_valid_url_object = marshal.load(file)
-with open('ss_web.marshal', 'rb') as file:
+with open('Functions/ss_web.marshal', 'rb') as file:
     ss_web_object = marshal.load(file)
 
 # Create a new function from the loaded code object
